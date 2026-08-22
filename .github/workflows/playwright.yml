@@ -1,11 +1,11 @@
-name: Playwright Tests
+name: morning pipline for playwright
 on:
   push:
-    branches: [ main, master ]
+    branches: '**'
   pull_request:
     branches: [ main, master ]
 jobs:
-  test:
+  playwright-tests :
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
